@@ -380,6 +380,9 @@
         .x-petals, .x-glow { display: none; }
         .x-reveal { opacity: 1; transform: none; }
       }
+      .x-nowrap { white-space: nowrap; }
+      .x-foot__addr { color: var(--x-cream); line-height: 1.5; padding-block: 6px; }
+      @media (max-width: 760px) { .x-foot__in { grid-template-columns: 1fr !important; } .x-foot li a { font-size: 17px; } }
     </style>
   </head>
   <body>
@@ -470,7 +473,7 @@
               <article class="x-slide" data-id="laddoo">
                 <div class="x-prod"><span class="x-prod__plate"></span><span class="x-prod__ring"></span><span class="x-prod__shadow"></span><div class="x-prod__img"><img src="sweet-laddoo.png" alt="Motichoor laddoo" /></div></div>
                 <div class="x-info">
-                  <p class="x-info__num">01 / 06 · Ghee sweet</p>
+                  <p class="x-info__num">01 / 07 · Ghee sweet</p>
                   <h3>Motichoor Laddoo</h3>
                   <p class="x-info__desc">Tiny pearls of besan fried in pure ghee, bound with saffron syrup.</p>
                   <p class="x-price"><span data-price="laddoo"></span> <small>per kg</small></p>
@@ -481,7 +484,7 @@
               <article class="x-slide" data-id="kajukatli">
                 <div class="x-prod"><span class="x-prod__plate"></span><span class="x-prod__ring"></span><span class="x-prod__shadow"></span><div class="x-prod__img"><img src="sweet-kajukatli.png" alt="Kaju katli with silver vark" /></div></div>
                 <div class="x-info">
-                  <p class="x-info__num">02 / 06 · Dry fruit · Bestseller</p>
+                  <p class="x-info__num">02 / 07 · Dry fruit · Bestseller</p>
                   <h3>Kaju Katli</h3>
                   <p class="x-info__desc">Silky cashew diamonds finished with real silver vark.</p>
                   <p class="x-price"><span data-price="kajukatli"></span> <small>per kg</small></p>
@@ -492,7 +495,7 @@
               <article class="x-slide" data-id="jalebi">
                 <div class="x-prod"><span class="x-prod__plate"></span><span class="x-prod__ring"></span><span class="x-prod__shadow"></span><div class="x-prod__img"><img src="sweet-jalebi.png" alt="Golden jalebi spirals" /></div></div>
                 <div class="x-info">
-                  <p class="x-info__num">03 / 06 · Ghee sweet</p>
+                  <p class="x-info__num">03 / 07 · Ghee sweet</p>
                   <h3>Jalebi</h3>
                   <p class="x-info__desc">Crisp, golden spirals soaked in warm saffron syrup. Best served hot.</p>
                   <p class="x-price"><span data-price="jalebi"></span> <small>per kg</small></p>
@@ -503,7 +506,7 @@
               <article class="x-slide" data-id="gulabjamun">
                 <div class="x-prod"><span class="x-prod__plate"></span><span class="x-prod__ring"></span><span class="x-prod__shadow"></span><div class="x-prod__img"><img src="sweet-gulabjamun.png" alt="A bowl of gulab jamun in syrup" /></div></div>
                 <div class="x-info">
-                  <p class="x-info__num">04 / 06 · Milk sweet</p>
+                  <p class="x-info__num">04 / 07 · Milk sweet</p>
                   <h3>Gulab Jamun</h3>
                   <p class="x-info__desc">Soft khoya dumplings in rose-cardamom syrup.</p>
                   <p class="x-price"><span data-price="gulabjamun"></span> <small>per kg</small></p>
@@ -514,7 +517,7 @@
               <article class="x-slide" data-id="rasmalai">
                 <div class="x-prod"><span class="x-prod__plate"></span><span class="x-prod__ring"></span><span class="x-prod__shadow"></span><div class="x-prod__img"><img src="sweet-rasmalai.png" alt="A bowl of rasmalai with pistachio" /></div></div>
                 <div class="x-info">
-                  <p class="x-info__num">05 / 06 · Milk sweet</p>
+                  <p class="x-info__num">05 / 07 · Milk sweet</p>
                   <h3>Rasmalai</h3>
                   <p class="x-info__desc">Pillowy chenna discs in chilled saffron-pistachio milk.</p>
                   <p class="x-price"><span data-price="rasmalai"></span> <small>per kg</small></p>
@@ -525,10 +528,22 @@
               <article class="x-slide" data-id="barfi">
                 <div class="x-prod"><span class="x-prod__plate"></span><span class="x-prod__ring"></span><span class="x-prod__shadow"></span><div class="x-prod__img"><img src="sweet-barfi.png" alt="Pista barfi squares with vark" /></div></div>
                 <div class="x-info">
-                  <p class="x-info__num">06 / 06 · Dry fruit</p>
+                  <p class="x-info__num">06 / 07 · Dry fruit</p>
                   <h3>Pista Barfi</h3>
                   <p class="x-info__desc">Rich pistachio fudge with crushed nuts and vark.</p>
                   <p class="x-price"><span data-price="barfi"></span> <small>per kg</small></p>
+                  <div class="x-weights" role="group" aria-label="Weight"></div>
+                  <button class="x-btn x-btn--gold" type="button" data-add></button>
+                </div>
+              </article>
+
+              <article class="x-slide" data-id="kunda">
+                <div class="x-prod"><span class="x-prod__plate"></span><span class="x-prod__ring"></span><span class="x-prod__shadow"></span><div class="x-prod__img"><img src="sweet-kunda.png" alt="Belagavi kunda in a brass bowl" /></div></div>
+                <div class="x-info">
+                  <p class="x-info__num">07 / 07 · Milk sweet · Belagavi special</p>
+                  <h3>Belagavi Kunda</h3>
+                  <p class="x-info__desc">Belagavi's own famous sweet: milk and khoya slow-cooked for hours until rich, grainy and deeply caramelised.</p>
+                  <p class="x-price"><span data-price="kunda"></span> <small>per kg</small></p>
                   <div class="x-weights" role="group" aria-label="Weight"></div>
                   <button class="x-btn x-btn--gold" type="button" data-add></button>
                 </div>
@@ -560,6 +575,7 @@
               <article class="x-card x-reveal" data-id="gulabjamun" data-cat="milk"><span class="x-card__shine"></span><div class="x-card__img"><img src="sweet-gulabjamun.png" alt="Gulab jamun" loading="lazy" /></div><p class="x-card__tag">Milk sweet</p><h3>Gulab Jamun</h3><p class="x-card__desc">Soft khoya dumplings in rose-cardamom syrup.</p><div class="x-card__foot"><p class="x-card__price"><span data-price="gulabjamun"></span> <small>/kg</small></p><button class="x-btn x-btn--maroon" type="button" data-quick>+ 500 g</button></div></article>
               <article class="x-card x-reveal" data-id="rasmalai" data-cat="milk"><span class="x-card__shine"></span><div class="x-card__img"><img src="sweet-rasmalai.png" alt="Rasmalai" loading="lazy" /></div><p class="x-card__tag">Milk sweet</p><h3>Rasmalai</h3><p class="x-card__desc">Chenna discs in chilled saffron-pistachio milk.</p><div class="x-card__foot"><p class="x-card__price"><span data-price="rasmalai"></span> <small>/kg</small></p><button class="x-btn x-btn--maroon" type="button" data-quick>+ 500 g</button></div></article>
               <article class="x-card x-reveal" data-id="barfi" data-cat="dry"><span class="x-card__shine"></span><div class="x-card__img"><img src="sweet-barfi.png" alt="Pista barfi" loading="lazy" /></div><p class="x-card__tag">Dry fruit</p><h3>Pista Barfi</h3><p class="x-card__desc">Rich pistachio fudge with crushed nuts and vark.</p><div class="x-card__foot"><p class="x-card__price"><span data-price="barfi"></span> <small>/kg</small></p><button class="x-btn x-btn--maroon" type="button" data-quick>+ 500 g</button></div></article>
+              <article class="x-card x-reveal" data-id="kunda" data-cat="milk"><span class="x-card__shine"></span><div class="x-card__img"><img src="sweet-kunda.png" alt="Belagavi kunda" loading="lazy" /></div><p class="x-card__tag">Milk sweet · Belagavi special</p><h3>Belagavi Kunda</h3><p class="x-card__desc">Slow-cooked caramelised milk sweet, Belagavi's pride.</p><div class="x-card__foot"><p class="x-card__price"><span data-price="kunda"></span> <small>/kg</small></p><button class="x-btn x-btn--maroon" type="button" data-quick>+ 500 g</button></div></article>
             </div>
           </div>
         </section>
@@ -674,19 +690,19 @@
               </div>
             </div>
             <div class="x-visit">
-              <div class="x-visit__card x-reveal">
+              <div class="x-visit__card">
                 <h3>Visit the shop</h3>
                 <p>2nd Gate, Tilakwadi<br>Belagavi, Karnataka</p>
                 <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Suraj%20Sweets%2C%202nd%20Gate%2C%20Tilakwadi%2C%20Belagavi%2C%20Karnataka" target="_blank" rel="noopener" style="color:#f5c542;font-weight:600">Get directions &rarr;</a></p>
               </div>
-              <div class="x-visit__card x-reveal">
+              <div class="x-visit__card">
                 <h3>Open every day</h3>
-                <p>Hours: <span class="x-ph">7:00 AM – 10:00 PM (edit)</span></p>
-                <p>Hot jalebi best in the morning.</p>
+                <p>Hours: 9:00 AM – 10:00 PM</p>
+                <p>Open all 7 days.</p>
               </div>
-              <div class="x-visit__card x-reveal">
+              <div class="x-visit__card">
                 <h3>Order ahead</h3>
-                <p>Phone: <a href="tel:+919019088160">+91 90190 88160</a><br />WhatsApp: <a href="https://wa.me/919019088160" target="_blank" rel="noopener">+91 90190 88160</a></p>
+                <p>Phone: <a class="x-nowrap" href="tel:+919019088160">+91&nbsp;90190&nbsp;88160</a><br />WhatsApp: <a class="x-nowrap" href="https://wa.me/919019088160" target="_blank" rel="noopener">+91&nbsp;90190&nbsp;88160</a></p>
                 <a class="x-btn x-btn--wa" href="https://wa.me/919019088160" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa" /></svg>Chat on WhatsApp</a>
               </div>
             </div>
@@ -714,10 +730,12 @@
               </ul>
             </div>
             <div>
-              <h4>Order</h4>
+              <h4>Order &amp; visit</h4>
               <ul>
-                <li><a href="tel:+919019088160">Phone: +91 90190 88160</a></li>
-                <li><a href="https://wa.me/919019088160" target="_blank" rel="noopener">WhatsApp: +91 90190 88160</a></li>
+                <li><a class="x-nowrap" href="tel:+919019088160">📞&nbsp;+91&nbsp;90190&nbsp;88160</a></li>
+                <li><a class="x-nowrap" href="https://wa.me/919019088160" target="_blank" rel="noopener">💬&nbsp;WhatsApp&nbsp;+91&nbsp;90190&nbsp;88160</a></li>
+                <li class="x-foot__addr">📍 2nd Gate, Tilakwadi,<br>Belagavi, Karnataka</li>
+                <li class="x-foot__addr">🕘 9:00 AM – 10:00 PM, all days</li>
               </ul>
             </div>
           </div>
@@ -746,7 +764,8 @@
         { id: "jalebi", name: "Jalebi", price: 380, line: "Garam garam jalebi, abhi abhi bani hai!" },
         { id: "gulabjamun", name: "Gulab Jamun", price: 480, line: "Ras bhare, pyaar bhare. Warm or chilled?" },
         { id: "rasmalai", name: "Rasmalai", price: 640, line: "Thandi thandi rasmalai, ekdum fresh!" },
-        { id: "barfi", name: "Pista Barfi", price: 1200, line: "Pista lovers, yeh aapke liye!" }
+        { id: "barfi", name: "Pista Barfi", price: 1200, line: "Pista lovers, yeh aapke liye!" },
+        { id: "kunda", name: "Belagavi Kunda", price: 520, line: "Belagavi aaye aur kunda nahi khaya? Chakh ke dekhiye!" }
       ];
       var PHONE = "919019088160";
 
